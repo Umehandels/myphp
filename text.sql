@@ -1,0 +1,2 @@
+USE POS;
+SELECT * FROM Item
