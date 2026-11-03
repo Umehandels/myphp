@@ -17,9 +17,14 @@ function multiplication($a, $b) {
 $a = [1, 2, 3];
 $b = [4,5,6];
 
+// Union by Key
 $c = $a + $b;
-
 print_r($c);
+
+// Union by value
+print_r( array_values(array_unique(array_merge($a, $b))));
+
+
 // --------------------------
 $v = 20;
 $d = 25;
