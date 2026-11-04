@@ -5,6 +5,7 @@
        ['name' => 'About MariaDB', 'url' => '/aboutmariadb.php'],
        ['name' => 'Configuration', 'url' => '/config.php'],
        ['name' => 'PHP Summary', 'url' => '/phpsummary.php'],
+       ['name' => 'Mastodon Posts', 'url' => '/mastodon.php'], 
    ];
    ?>
 
