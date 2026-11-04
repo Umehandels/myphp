@@ -1,3 +1,13 @@
+<?php
+   $menuItems = [
+       ['name' => 'Home', 'url' => '/index.php'],
+       ['name' => 'About PHP', 'url' => '/aboutphp.php'],
+       ['name' => 'About MariaDB', 'url' => '/aboutmariadb.php'],
+       ['name' => 'Configuration', 'url' => '/config.php'],
+       ['name' => 'PHP Summary', 'url' => '/phpsummary.php'],
+   ];
+   ?>
+
 <div class="container">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -7,20 +17,23 @@
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
                 <a class="navbar-brand" href="#">Learning PHP</a>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link <?= $_SERVER['SCRIPT_NAME'] === '/index.php' ? 'active' : '' ?>" aria-current="page" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link <?= $_SERVER['SCRIPT_NAME'] === '/aboutphp.php' ? 'active' : '' ?>" href="aboutphp.php">About PHP</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link <?= $_SERVER['SCRIPT_NAME'] === '/aboutmariadb.php' ? 'active' : '' ?>" href="aboutmariadb.php">About MariaDB</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link <?= $_SERVER['SCRIPT_NAME'] === '/config.php' ? 'active' : '' ?>" href="config.php">Configuration</a>
-                    </li>
+                   <?php
+       $scriptName = $_SERVER['SCRIPT_NAME'];
+       foreach ($menuItems as $menuItem) {
+           $isActive = $menuItem['url'] === $scriptName ? 'active' : '';
+           echo <<<ITEM
+               <li class="nav-item">
+                   <a class="nav-link $isActive"
+                       aria-current="page" href="{$menuItem['url']}">{$menuItem['name']}</a>
+               </li>
+           ITEM;
+       }
+       ?>
                 </ul>
+                <i class="bi bi-moon"></i>
+               <button class="darkmode" title="darkmode switch" aria-hidden="true"></button>
             </div>
         </div>
     </nav>
 </div>
+<script type="text/javascript" src="js/darkmode.js"></script>
