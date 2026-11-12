@@ -122,7 +122,7 @@ foreach($planetArray as $name=>$type) {
 printf('<p>%s is a %s planet.</p>', $name, $type); 
 } 
 
-// using a foreach loop
+// using a ForEach loop
 foreach($planetArray as $name=>$type) { 
 if ($name === 'Uranus') { 
 $type = 'Ice Giant'; 
