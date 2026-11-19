@@ -13,6 +13,10 @@ Exercises for the Back-End Development With PHP course. Each unit is split into 
 | [M5 PHP](modules/m5-php/README.md) | [U1 Welcome to PHP](modules/m5-php/u1-welcome-to-php/README.md) | 01 to 05 |
 | | [U2 Language Basics](modules/m5-php/u2-language-basics/README.md) | 01 to 07 |
 | | [U3 Operators and Control Flow](modules/m5-php/u3-operators-control-flow/README.md) | 01 to 08 |
+| | [U4 Functions](modules/m5-php/u4-functions/README.md) | 01 to 07 |
+| | [U5 Processing Forms](modules/m5-php/u5-processing-forms/README.md) | 01 to 10 |
+| | [U6 Working With Arrays](modules/m5-php/u6-working-with-arrays/README.md) | 01 to 09 |
+| | [U7 Object-Oriented Programming](modules/m5-php/u7-object-oriented-programming/README.md) | 01 to 12 |
 
 More units will be added here as the course progresses.
 
