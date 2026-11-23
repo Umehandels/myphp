@@ -8,7 +8,7 @@ abstract class Animal
     // Regular method
     public function eat()
     {
-        echo "Animal is eating.<br>";
+        echo "Animal is eating.\n";
     }
 }
 
@@ -16,7 +16,7 @@ class Dog extends Animal
 {
     public function makeSound()
     {
-        echo "Dog barks.<br>";
+        echo "Dog barks.\n";
     }
 }
 
@@ -35,7 +35,7 @@ class CreditCardPayment implements PaymentMethod
 {
     public function pay($amount)
     {
-        echo "Paid $$amount using Credit Card.<br>";
+        echo "Paid $$amount using Credit Card.\n";
     }
 }
 
@@ -43,7 +43,7 @@ class PayPalPayment implements PaymentMethod
 {
     public function pay($amount)
     {
-        echo "Paid $$amount using PayPal.<br>";
+        echo "Paid $$amount using PayPal.\n";
     }
 }
 
@@ -61,7 +61,7 @@ trait Logger
 {
     public function log($message)
     {
-        echo "$message<br>";
+        echo "$message\n";
     }
 }
 
